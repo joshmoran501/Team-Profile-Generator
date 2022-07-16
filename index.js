@@ -8,6 +8,7 @@ const generateHTML = require('./src/generateHTML')
 
 let teamArray = []
 
+// questions for manager
 const managerQuestions = () => {
     return inquirer.prompt ([
         {
@@ -68,6 +69,7 @@ const managerQuestions = () => {
     })
 }
 
+// Questions for engineer and intern
 const employeeQuestions = () => {
     return inquirer.prompt([
         {
@@ -169,6 +171,7 @@ const employeeQuestions = () => {
     })
 }
 
+// Write file to index.html
 const writeFile = data => {
     fs.writeFile('./dist/index.html', data, err => {
         if(err) {

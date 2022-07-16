@@ -1,3 +1,4 @@
+// generate manager card
 const generateManager = function (manager) {
     return `
     <div class="card">
@@ -13,6 +14,7 @@ const generateManager = function (manager) {
     `
 }
 
+// generate engineer cards
 const generateEngineer = function (engineer) {
     return `
     <div class="card">
@@ -28,6 +30,7 @@ const generateEngineer = function (engineer) {
     `
 }
 
+// generate intern cards
 const generateIntern = function (intern) {
     return `
     <div class="card">
@@ -45,6 +48,7 @@ const generateIntern = function (intern) {
 
 generateHTML = (data) => {
     employeeArray = []
+    // loop through data array
     for (i=0; i < data.length; i++) {
         const person = data[i]
         const role = person.getRole()
@@ -78,37 +82,37 @@ generateHTML = (data) => {
 const generatePage = function (teamCards) {
     return `
     <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+        rel="stylesheet"
+        href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    />
     <link
-    rel="stylesheet"
-    href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-  />
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-    rel="stylesheet"
-  />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-  <link rel="stylesheet" href="./style.css" />
-    <title>Team Profile Generator</title>
-</head>
+        href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+        rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+        <title>Team Profile Generator</title>
+    </head>
 
-<body>
-    <header>
-        <h1>Team Profile Generator</h1>
-    </header>
+    <body>
+        <header>
+            <h1>Team Profile Generator</h1>
+        </header>
 
-    <div class="row">
-        <div class="col-2"></div>
-        <div id="employeeCards" class="col-8">
-            ${teamCards}
-        </div>
-</div>
-</body>
+        <div class="row">
+            <div class="col-2"></div>
+            <div id="employeeCards" class="col-8">
+                ${teamCards}
+            </div>
+    </div>
+    </body>
     `
 } 
 
