@@ -1,0 +1,26 @@
+header h1 {
+    text-align: center;
+    background-color: lightblue;
+    padding: 10px
+}
+
+#employeeCards {
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card {
+    border-radius: 5px;
+}
+
+.cardHead {
+    color: white;
+    background-color: navy;
+    padding: 8px;
+}
+
+.card p {
+    padding: 2px 4px 2px 4px;
+}

@@ -1,0 +1,29 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "Node.js program to generate an HTML page that displays information on team members",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshmoran501/Team-Profile-Generator.git"
+  },
+  "keywords": [
+    "Node.js",
+    "Jest",
+    "class",
+    "constructor"
+  ],
+  "author": "Joshua Moran",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joshmoran501/Team-Profile-Generator/issues"
+  },
+  "homepage": "https://github.com/joshmoran501/Team-Profile-Generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0",
+    "jest": "^28.1.2"
+  }
+}
